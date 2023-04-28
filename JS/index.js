@@ -6,11 +6,11 @@ function createItems(item, items){
 }
 createItems ({name: "Carlos", id: 33}, items);
 createItems ({name: "Luis", id: 34}, items);
-console.log(items)
 function getAllItems (array){
   return(array)
 }
 getAllItems(items)
+console.log(items)
 
 function searchItems(id, items) {
   if (!id) {
