@@ -1,7 +1,7 @@
 const items = []
 
-function createItems(item, Items){
-   Items.push(item)
+function createItems(item, items){
+   items.push(item)
   return item
 }
 createItems ({name: "Carlos", id: 33}, items);
