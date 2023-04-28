@@ -23,6 +23,9 @@ return foundItem
 searchItems(33, items);
 
 function updateItems(id,data,items){
+  if (isNaN(id)){
+    console.log("La entrada tiene que ser de tipo numero")
+  }
 const itemSearch = items.find(i => i.id === id);
       itemSearch.name = data; 
 return itemSearch
@@ -34,6 +37,8 @@ function deleteProducts (id,items) {
   const indexItem = items.findIndex(item => item.id === id);
   if (indexItem !== -1){
   items.splice(indexItem, 1);
+  }else{
+    console.log("ingrese un numero valido")
   } 
   return items;
 }
